@@ -1,9 +1,14 @@
+import React from "react";
 import { FaSearch, FaDumbbell, FaCartArrowDown } from "react-icons/fa";
 import { CgMenuGridR } from "react-icons/cg";
 import { NavbarMenu } from "../../mockData/data";
 import MdMenu from "./MdMenu";
 
 const NavBar = () => {
+  const [isOpen, setIsOpen] = React.useState(false);
+  const openHandlerMenuMd = () => {
+    setIsOpen(!isOpen);
+  };
   return (
     <>
       <nav>
@@ -43,11 +48,12 @@ const NavBar = () => {
               Login
             </button>
           </div>
-          <div>
+          <div className="md:hidden" onClick={openHandlerMenuMd}>
             <CgMenuGridR className="text-4xl hover:text-purple-300 cursor-pointer select-none" />
           </div>
         </div>
       </nav>
+      <MdMenu isOpen={isOpen} />
     </>
   );
 };

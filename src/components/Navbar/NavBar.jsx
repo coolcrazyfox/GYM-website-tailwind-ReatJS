@@ -15,7 +15,14 @@ const NavBar = () => {
           <div>
             <ul>
               {NavbarMenu.map((item) => {
-                return <li key={item.id}>{item.title}</li>;
+                return (
+                  <li
+                    key={item.id}
+                    className="uppercase cursor-pointer select-none"
+                  >
+                    {item.title}
+                  </li>
+                );
               })}
             </ul>
           </div>

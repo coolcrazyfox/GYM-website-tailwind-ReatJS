@@ -20,7 +20,12 @@ const NavBar = () => {
                     key={item.id}
                     className="uppercase cursor-pointer select-none"
                   >
-                    <a href={item.link}>{item.title}</a>
+                    <a
+                      href={item.link}
+                      className="inline-bock py-1 px-3 hover:text-primary font-semibold"
+                    >
+                      {item.title}
+                    </a>
                   </li>
                 );
               })}

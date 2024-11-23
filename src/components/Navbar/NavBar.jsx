@@ -6,9 +6,7 @@ import MdMenu from "./MdMenu";
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = React.useState(false);
-  const openHandlerMenuMd = (isOpen) => {
-    setIsOpen(!isOpen);
-  };
+
   return (
     <>
       <nav>
@@ -48,7 +46,7 @@ const NavBar = () => {
               Login
             </button>
           </div>
-          <div className="md:hidden" onClick={openHandlerMenuMd}>
+          <div className="md:hidden" onClick={() => setIsOpen(!isOpen)}>
             <CgMenuGridR className="text-4xl hover:text-purple-300 cursor-pointer select-none" />
           </div>
         </div>

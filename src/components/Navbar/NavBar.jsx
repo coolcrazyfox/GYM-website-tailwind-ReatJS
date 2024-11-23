@@ -31,12 +31,12 @@ const NavBar = () => {
               })}
             </ul>
           </div>
-          <div>
+          <div className="flex items-center gap-4">
             <button className="text-2xl hover:bg-primary hover:text-purple-300 rounded-full py-2 duration-200">
-              <FaSearch className="text-2xl" />
+              <FaSearch className="" />
             </button>
             <button className="text-2xl hover:bg-primary hover:text-purple-300 rounded-full py-2 duration-200">
-              <FaCartArrowDown className="text-2xl" />
+              <FaCartArrowDown className="" />
             </button>
             <button className="hover:bg-primary text-primary font-semibold hover:text-white rounded-md border-2 border-primary px-6  py-2 duration-200hidden md:block">
               Login

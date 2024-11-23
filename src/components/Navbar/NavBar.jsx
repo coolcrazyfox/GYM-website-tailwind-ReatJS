@@ -13,7 +13,7 @@ const NavBar = () => {
             <p className="text-secondary">Gym</p>
           </div>
           <div className="hidden md:block">
-            <ul className="flex items-center gap6 text-purple-300">
+            <ul className="flex items-center gap-6 text-purple-300">
               {NavbarMenu.map((item) => {
                 return (
                   <li
@@ -22,7 +22,7 @@ const NavBar = () => {
                   >
                     <a
                       href={item.link}
-                      className="inline-bock py-1 px-3 hover:text-primary font-semibold"
+                      className="inline-block py-1 px-3 hover:text-primary font-semibold"
                     >
                       {item.title}
                     </a>

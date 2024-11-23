@@ -31,10 +31,13 @@ const NavBar = () => {
               })}
             </ul>
           </div>
-          <div></div>
+          <div>
+            <button className="text-2xl hover:bg-primary hover:text-purple-300 rounded-full py-2 duration-200">
+              <FaSearch className="text-2xl" />
+            </button>
+          </div>
           <div></div>
         </div>
-        {/* <FaSearch /> */}
       </nav>
     </>
   );

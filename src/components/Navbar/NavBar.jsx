@@ -6,7 +6,7 @@ import MdMenu from "./MdMenu";
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = React.useState(false);
-  const openHandlerMenuMd = () => {
+  const openHandlerMenuMd = (isOpen) => {
     setIsOpen(!isOpen);
   };
   return (

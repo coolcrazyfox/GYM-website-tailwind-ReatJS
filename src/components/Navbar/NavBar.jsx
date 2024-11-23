@@ -51,7 +51,7 @@ const NavBar = () => {
           </div>
         </div>
       </nav>
-      <MdMenu isOpen={isOpen} />
+      <MdMenu opened={isOpen} />
     </>
   );
 };

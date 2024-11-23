@@ -1,6 +1,7 @@
 import { FaSearch, FaDumbbell, FaCartArrowDown } from "react-icons/fa";
 import { CgMenuGridR } from "react-icons/cg";
 import { NavbarMenu } from "../../mockData/data";
+import MdMenu from "./MdMenu";
 
 const NavBar = () => {
   return (
@@ -32,17 +33,19 @@ const NavBar = () => {
             </ul>
           </div>
           <div className="flex items-center gap-4">
-            <button className="text-2xl hover:bg-primary hover:text-purple-300 rounded-full p-2 duration-200">
+            <button className="text-2xl hover:bg-primary hover:text-purple-300 rounded-full p-3 duration-200">
               <FaSearch className="" />
             </button>
-            <button className="text-2xl hover:bg-primary hover:text-purple-300 rounded-full p-2 duration-200">
+            <button className="text-2xl text-primary hover:bg-primary hover:text-purple-300 rounded-full p-3 duration-200">
               <FaCartArrowDown className="" />
             </button>
-            <button className="hover:bg-primary text-primary font-semibold hover:text-white rounded-md border-2 border-primary px-6  py-2 duration-200hidden md:block">
+            <button className="hover:bg-primary text-primary font-semibold hover:text-white rounded-md border-2 border-primary px-6  py-2 duration-200hidden md:block select-none">
               Login
             </button>
           </div>
-          <div></div>
+          <div>
+            <CgMenuGridR className="text-4xl hover:text-purple-300 cursor-pointer select-none" />
+          </div>
         </div>
       </nav>
     </>

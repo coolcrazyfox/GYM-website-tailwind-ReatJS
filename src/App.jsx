@@ -1,5 +1,11 @@
+import NavBar from "./components/Navbar/NavBar";
+
 function App() {
-  return <div className="bg-green-400">hi</div>;
+  return (
+    <div className="overflow-x-hidden">
+      <NavBar />
+    </div>
+  );
 }
 
 export default App;

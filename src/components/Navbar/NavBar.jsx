@@ -6,7 +6,7 @@ const NavBar = () => {
     <>
       <nav>
         <div className="container">
-          <div>
+          <div className="text-2xl flex items-center gap-2 fon-bold py-8">
             <FaDumbbell />
             <p>Main</p>
             <p>Gym</p>
